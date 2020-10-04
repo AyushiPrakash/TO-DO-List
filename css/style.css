@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url("/Images/mountain.jpg");
+    background-image: url("https://ayushiprakash.github.io/TO-DO-List/Images/mountain.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
