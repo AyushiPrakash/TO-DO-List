@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url(/Images/mountain.jpg);
+    background-image: url("/Images/mountain.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -116,10 +116,11 @@ body{
     margin-left: 2.5rem;
     margin-top: 0.5rem;
 }
-.checkbox-input:checked{
-    text-decoration:line-through;
-    color: white;
-  } 
+
+/* .checkbox-input:checked + .item-type {
+    text-decoration: line-through;
+    color: red;
+} */
 
 #items{
     list-style-type: none;
@@ -127,14 +128,14 @@ body{
   
 .item-type{
     display: flex;
-    width: 90%;
+    width: 85%;
     margin-left: 5rem;
     margin-top: 1rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem;
     background-color: transparent;
     border-bottom: 0.1px dotted white;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: white;
 }
   
