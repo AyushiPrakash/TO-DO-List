@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/Images/mountain.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* .heading{
+    position: fixed;
+    margin-top: 6rem;
+    font-size: 50px; 
+} */
+
+.container{
+    position: absolute;
+    height: 35rem;
+    width: 35rem;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 0 0 55px black;
+}
+
+
+#add-input{
+    position: absolute;
+    height: 2.5rem;
+    width: 80%;
+    margin-left: 1.8rem;
+    top: 1rem;
+    padding-left: 1rem;
+    border: none;
+    /* border-radius: 0.8rem; */
+    outline: none;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+}
+
+#add-button{
+    position: absolute;
+    margin-left: 31rem;
+    top: 1.5rem;
+    border: none;
+    background-color:transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.75s ease;
+}
+
+.fa-plus{
+    color: whitesmoke;
+}
+
+/* .fa-plus:hover{
+    font-size:1.5em;
+    color: grey;
+} */
+
+#search-input{
+    position: absolute;
+    height: 2.5rem;
+    width: 90%;
+    margin-left: 2rem;
+    top: 5rem;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    border: 0.5px solid white;
+    border-radius: 0.8rem;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+}
+
+#search{
+    position: absolute;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    top: 5.7rem;
+}
+
+.fa-search{
+    color: white;
+}
+
+#list{
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    margin: auto;
+    top: 6rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#list::-webkit-scrollbar{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.checkbox-input{
+    position: absolute;
+    left: 0;
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
+}
+.checkbox-input:checked{
+    text-decoration:line-through;
+    color: white;
+  } 
+
+#items{
+    list-style-type: none;
+}
+  
+.item-type{
+    display: flex;
+    
+    width: 90%;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: transparent;
+    border-bottom: 0.1px dotted white;
+    font-size: 1.6rem;
+    color: white;
+}
+  
+.item-type button{
+    right: 0;
+    position: absolute;
+    display: none;
+    width: 1rem;
+    height: 1rem;
+    padding-top: 0.5rem;
+    padding-right: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
