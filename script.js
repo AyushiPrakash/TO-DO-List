@@ -64,6 +64,7 @@ function render(list) {
     li.addEventListener("mouseout",()=>{
         li.lastElementChild.style.display = "none"
     })
+
     //CHECKBOX
     checkbox.addEventListener("click", (event) => {
       var temp = [];
@@ -79,9 +80,11 @@ function render(list) {
         render(temp);
       });
     });
+
     //DELETE FUNCTION
     deleteButton.addEventListener("click", () => {
       var temp = [];
+      alert("Delete this item?")
       list.forEach((listItem, newIndex) => {
         if (newIndex != index) temp.push(listItem);
         localStorage.setItem("data", JSON.stringify(temp));
