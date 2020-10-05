@@ -189,7 +189,7 @@ body{
         display: block;
         position: absolute;
         height: 2.5rem;
-        top: 1rem;
+        top: 2rem;
         left: 0;
         padding-left: 2rem;
         border:none;
@@ -203,7 +203,7 @@ body{
         position: absolute;
         right: 0;
         padding-right: 1.8rem;
-        top: 1.5rem;
+        top: 2.5rem;
     }
 
     #search-input{
