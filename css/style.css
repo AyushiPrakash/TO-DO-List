@@ -175,6 +175,10 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    position: fixed;
+  }
+
   .container {
     position: fixed;
     width: 100vw;
@@ -223,7 +227,7 @@ body {
   #add-input-1:hover ~ .underbar {
     top: 6rem;
     left: 2rem;
-    width: 84%;
+    width: 75%;
     background: white;
   }
 
@@ -257,7 +261,7 @@ body {
     top: 12rem;
     right: 1rem;
     left: 0;
-    bottom: 0;
+    bottom: 2.5rem;
     overflow-y: scroll;
     overflow-x: hidden;
   }
