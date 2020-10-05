@@ -15,6 +15,19 @@ addButton.addEventListener("click", () => {
   render(todoList);
 });
 
+//ENTER FEATURE
+
+addInput.addEventListener("keydown", (event)=>{
+  if(event.keyCode==13){
+  var list =JSON.parse(localStorage.getItem("data"));
+  if(!list) list =[];
+  list.push({message:event.target.value, isChecked:false});
+  localStorage.setItem("data",JSON.stringify(list))
+  render(list);
+  addInput.value="";
+  }
+})
+
 //SEARCH
 searchInput.addEventListener("input", (event)=>{
     var todoList = JSON.parse(localStorage.getItem("data"));
@@ -79,9 +92,22 @@ function render(list) {
 
 }
 
+input.addEventListener("keydown", (event)=>{
+  if(event.keyCode==13){
+    var list =JSON.parse(localStorage.getItem("data"));
+    if(!list) list =[];
+    list.push({message:event.target.value, isChecked:false});
+    localStorage.setItem("data",JSON.stringify(list))
+    render(list);
+    input.value="";
+  }
+})
+
 window.onload = function () {
   var todoList = JSON.parse(localStorage.getItem("data"));
   if (!todoList) todoList = [];
 
   render(todoList);
 };
+
+
