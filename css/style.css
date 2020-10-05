@@ -261,7 +261,7 @@ body {
     top: 12rem;
     right: 1rem;
     left: 0;
-    bottom: 2.5rem;
+    bottom: 0;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -283,7 +283,7 @@ body {
     margin-left: 4rem;
     margin-right: 1rem;
     margin-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
     padding-left: 0.5rem;
     background-color: transparent;
     border-bottom: 0.1px dotted white;
