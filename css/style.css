@@ -204,34 +204,25 @@ body{
         right: 0;
         padding-right: 1.8rem;
         top: 1.5rem;
-        border: none;
-        background-color:transparent;
-        outline: none;
-        cursor: pointer;
-        transition: all 0.75s ease;
     }
 
     #search-input{
         position: absolute;
         height: 2.5rem;
         width: 85%;
-        margin-left: 2rem;
-        top: 5rem;
-        padding-left: 3rem;
-        padding-right: 1rem;
-        border: 0.5px solid white;
-        border-radius: 0.8rem;
-        outline: none;
-        font-size: 1.2rem;
-        background-color: black;
-        color: white;
     }
-    
-    #search{
+
+    #list{
         position: absolute;
-        margin-left: 2rem;
-        padding-left: 1rem;
-        top: 5.7rem;
+        height: 75%;
+        width: 100%;
+        margin: auto;
+        top: 6rem;
+        right: 1rem;
+        left: 0;
+        bottom: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     .checkbox-input{
