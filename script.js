@@ -92,7 +92,7 @@ function render(list) {
 
 }
 
-input.addEventListener("keydown", (event)=>{
+addInput.addEventListener("keydown", (event)=>{
   if(event.keyCode==13){
     var list =JSON.parse(localStorage.getItem("data"));
     if(!list) list =[];
