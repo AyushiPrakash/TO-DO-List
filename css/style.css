@@ -210,6 +210,14 @@ body{
         position: absolute;
         height: 2.5rem;
         width: 85%;
+        top:6rem;
+    }
+
+    #search{
+        position: absolute;
+        margin-left: 2rem;
+        padding-left: 1rem;
+        top: 6.7rem;
     }
 
     #list{
