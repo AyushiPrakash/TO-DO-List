@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function () { 
   let addButton = document.getElementById("add-button");
   let addInput = document.getElementById("add-input");
   let listContainer = document.getElementById("items");
@@ -19,6 +19,7 @@ window.onload = function () {
   //ENTER FEATURE
 
   addInput.addEventListener("keydown", (event) => {
+    if (inputText.value.length === 0) return;
     if (event.keyCode == 13) {
       var list = JSON.parse(localStorage.getItem("data"));
       if (!list) list = [];
