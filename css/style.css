@@ -55,6 +55,7 @@ body {
   width: 0;
   height: 1px;
   top: 3rem;
+  left: 2rem;
   position: absolute;
   margin-top: 0.5rem;
   -webkit-transition: 0.5s ease-in-out;
@@ -171,6 +172,10 @@ body {
   color: white;
 }
 
+.item-type .hover{
+  display: block;
+}
+
 @media only screen and (max-width: 600px) {
     
   body {
@@ -213,6 +218,7 @@ body {
     width: 0;
     height: 1px;
     top: 6rem;
+    left: 2rem;
     position: absolute;
     margin-top: 0.5rem;
     -webkit-transition: width 0.5s ease;
@@ -288,7 +294,7 @@ body {
   .item-type button {
     right: 1rem;
     position: absolute;
-    display: none;
+    display: block;
     width: 1rem;
     height: 1rem;
     padding-top: 0.5rem;

@@ -60,10 +60,10 @@ window.onload = function () {
       let li = document.getElementById("l" + index);
 
       li.addEventListener("mouseover", () => {
-        li.lastElementChild.style.display = "block";
+        li.lastElementChild.classList.add("hover");
       });
       li.addEventListener("mouseout", () => {
-        li.lastElementChild.style.display = "none";
+        li.lastElementChild.classList.remove("hover");
       });
 
       //CHECKBOX
@@ -84,12 +84,13 @@ window.onload = function () {
       //DELETE FUNCTION
       deleteButton.addEventListener("click", () => {
         var temp = [];
-        alert("Delete this item?");
-        list.forEach((listItem, newIndex) => {
-          if (newIndex != index) temp.push(listItem);
-          localStorage.setItem("data", JSON.stringify(temp));
-          render(temp);
-        });
+        if (confirm("Delete this item?")) {
+          list.forEach((listItem, newIndex) => {
+            if (newIndex != index) temp.push(listItem);
+            localStorage.setItem("data", JSON.stringify(temp));
+            render(temp);
+          });
+        }
       });
     });
   }
