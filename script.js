@@ -19,7 +19,8 @@ window.onload = function () {
   //ENTER FEATURE
 
   addInput.addEventListener("keydown", (event) => {
-    if (inputText.value.length === 0) return;
+    var inputText = addInput.value;
+    if (inputText.length === 0) return;
     if (event.keyCode == 13) {
       var list = JSON.parse(localStorage.getItem("data"));
       if (!list) list = [];
